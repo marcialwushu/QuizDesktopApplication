@@ -141,7 +141,77 @@ namespace QuizDesktopApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            if (textBox1.Text == "Who is the founder of pakistan" || textBox1.Text == "The largest coffee growing country in the world is ?")
+            {
+                Random a3 = new Random();
+                int ran3 = a3.Next(1, 3);
+                if (ran3 == 1)
+                {
+                    score = 3000;
+                    button3.Enabled = true;
+                    button4.Enabled = true;
+                    textBox1.Text = "When state bank of Pakistan established";
+                    button1.Text = "A) 1947";
+                    button2.Text = "B) 1948";
+                    button3.Text = "C) 1949";
+                    button4.Text = "D) 1950";
+                    label3.BackColor = System.Drawing.Color.Indigo;
+                }
+                else if (ran3 == 2)
+                {
+                    score = 3000;
+                    button3.Enabled = true;
+                    button4.Enabled = true;
+                    textBox1.Text = "Which is the National Game of Pakistan";
+                    button1.Text = "A) Hockey";
+                    button2.Text = "B) Cricket";
+                    button3.Text = "C) Football";
+                    button4.Text = "D) Tannis";
+                    label3.BackColor = System.Drawing.Color.Indigo;
+                }
+            }
+            else if (textBox1.Text == "Who is Governer of Sindh")
+            {
+                score = 40000;
+                button1.Enabled = true;
+                button3.Enabled = true;
+                textBox1.Text = "Who is the founder of Facebook";
+                button1.Text = "A) Markoni";
+                button2.Text = "B) Mekintosh";
+                button3.Text = "C) Mark Zuckerberg";
+                button4.Text = "D) James Pitter";
+                label7.BackColor = System.Drawing.Color.Indigo;
+            }
+            else if (textBox1.Text == "When china got independence")
+            {
+                score = 320000;
+                button1.Enabled = true;
+                button4.Enabled = true;
+                textBox1.Text = "How many nishan-e-haider holders in pakistan";
+                button1.Text = "A) 6";
+                button2.Text = "B) 8";
+                button3.Text = "C) 10";
+                button4.Text = "D) 12";
+                label10.BackColor = System.Drawing.Color.Indigo;
+            }
+            else if (textBox1.Text == "When Menhmod Gaznavi born")
+            {
+                score = 2500000;
+                button1.Enabled = true;
+                button3.Enabled = true;
+                textBox1.Text = "When Google was lounched";
+                button1.Text = "A) 1998";
+                button2.Text = "B) 1997";
+                button3.Text = "C) 1996";
+                button4.Text = "D) 1995";
+                label3.BackColor = System.Drawing.Color.Indigo;
+            }
+            else
+            {
+                Form4 f4 = new Form4();
+                f4.Show();
+                this.Hide();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
