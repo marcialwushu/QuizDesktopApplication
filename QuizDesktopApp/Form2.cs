@@ -216,12 +216,74 @@ namespace QuizDesktopApp
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            if (textBox1.Text == "Who Write the National anthem of Pakistan" || textBox1.Text == "Who is the famous Poet of Pakistan")
+            {
+                Random a4 = new Random();
+                int ran4 = a4.Next(1, 3);
+                if (ran4 == 1)
+                {
+                    score = 2000;
+                    button1.Enabled = true;
+                    button4.Enabled = true;
+                    textBox1.Text = "Who is the founder of Pakistan";
+                    button1.Text = "A) Allan Iqbal";
+                    button2.Text = "B) Quid-e-Azam";
+                    button3.Text = "C) Lyaqat Ali Khan";
+                    button4.Text = "D) Molvi Abdul Haq";
+                    label3.BackColor = System.Drawing.Color.Indigo;
+                }
+                else if (ran4 == 2)
+                {
+                    score = 2000;
+                    button1.Enabled = true;
+                    button4.Enabled = true;
+                    textBox1.Text = "The largest coffee growing country in the world is ?";
+                    button1.Text = "A) KENIA";
+                    button2.Text = "B) BRAZIL";
+                    button3.Text = "C) ISTAMBUL";
+                    button4.Text = "D) ENGLAND";
+                    label2.BackColor = System.Drawing.Color.Indigo;
+                }
+            }
+            else if (textBox1.Text == "Who is the founder of facebook")
+            {
+                score = 80000;
+                button1.Enabled = true;
+                button2.Enabled = true;
+                textBox1.Text = "Total sixes hit by Shahid afridi";
+                button1.Text = "A) 348";
+                button2.Text = "B) 349";
+                button3.Text = "C) 350";
+                button4.Text = "D) 351";
+                label8.BackColor = System.Drawing.Color.Indigo;
+            }
+            else if (textBox1.Text == "how many nishan-e-haider holders in pakistan")
+            {
+                score = 625000;
+                button2.Enabled = true;
+                button4.Enabled = true;
+                textBox1.Text = "When Mohammad bin Qasim Died";
+                button1.Text = "A) 712";
+                button2.Text = "B) 713";
+                button3.Text = "C) 714";
+                button4.Text = "D) 715";
+                label11.BackColor = System.Drawing.Color.Indigo;
+            }
+            else if (textBox1.Text == "Who was the last Mughal ")
+            {
+                Form4 f4 = new Form4();
+                f4.Show();
+                this.Hide();
+                //player.Stop();
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "When pakistan become atomic power")
+            {
 
+            }
         }
     }
 }
