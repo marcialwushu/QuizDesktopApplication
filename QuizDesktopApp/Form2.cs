@@ -282,7 +282,70 @@ namespace QuizDesktopApp
         {
             if (textBox1.Text == "When pakistan become atomic power")
             {
+                //clap.Play();
+                score = 10000;
+                button2.Enabled = true;
+                button3.Enabled = true;
+                textBox1.Text = "When Mohammad bin Qasim Died";
+                button1.Text = "A) 712";
+                button2.Text = "B) 713";
+                button3.Text = "C) 714";
+                button4.Text = "D) 715";
+                label11.BackColor = System.Drawing.Color.Indigo;
+            }
+            else if (textBox1.Text == "Total sixes hit by Shahid afridi")
+            {
+                //clap.Play();
+                score = 160000;
+                button1.Enabled = true;
+                button2.Enabled = true;
+                textBox1.Text = "When china got independence ";
+                button1.Text = "A) 1948";
+                button2.Text = "B) 1949";
+                button3.Text = "C) 1950";
+                button4.Text = "D) 1951";
+                label9.BackColor = System.Drawing.Color.Indigo;
+            }
+            else if (textBox1.Text == "When Mohammad bin Qasim Died")
+            {
+                //clap.Play();
+                score = 1250000;
+                button1.Enabled = true;
+                button2.Enabled = true;
+                textBox1.Text = "When Mehmood Gaznavi born";
+                button1.Text = "A) 972";
+                button2.Text = "B) 971";
+                button3.Text = "C) 973";
+                button4.Text = "D) 974";
+                label12.BackColor = System.Drawing.Color.Indigo;
+            }
+            else
+            {
+                Form f4 = new Form4();
+                f4.Show();
+                this.Hide();
+                //player.Stop();
+            }
+        }
 
+        private void Form2_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                if (textBox1.Text == "")
+                {
+
+                }
             }
         }
     }
