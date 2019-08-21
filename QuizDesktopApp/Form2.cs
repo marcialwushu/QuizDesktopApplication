@@ -467,7 +467,29 @@ namespace QuizDesktopApp
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox2.Checked == true)
+            {
+                if (textBox1.Text == "Who is the prime minister of Pakistan" || textBox1.Text == "When pakistan won ODI World Cup" || textBox1.Text == "Who is the President of PAF-KIET" || textBox1.Text == "Who won 2016 T20 World cup")
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (A) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+                if (textBox1.Text == "Who Write the National anthem of Pakistan" || textBox1.Text == "Who is the famous Poet of Pakistan" )
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (C) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+                if (textBox1.Text == "When pakistan become atomic power" || textBox1.Text == "The largest coffee growing country in the world is ?" )
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (B) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+                if (textBox1.Text == "Who is the Governer of Sindh" )
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (A) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+            }
         }
     }
 }
