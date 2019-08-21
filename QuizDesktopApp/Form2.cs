@@ -342,6 +342,18 @@ namespace QuizDesktopApp
         {
             if (checkBox1.Checked == true)
             {
+                if (textBox1.Text == "Who is the prime minister of Pakistan" || textBox1.Text == "When pakistan won ODI World Cup" || textBox1.Text == "Who is the President of PAF-KIET" || textBox1.Text == "Who won T20 World Cup")
+                {
+                    button3.Text = "";
+                    button4.Text = "";
+                    checkBox1.Enabled = false;
+                    button3.Enabled = false;
+                    button4.Enabled = false;
+                }
+                if (textBox1.Text == "")
+                {
+
+                }
                 if (textBox1.Text == "")
                 {
 
