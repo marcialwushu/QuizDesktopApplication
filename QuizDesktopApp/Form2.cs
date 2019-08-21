@@ -350,15 +350,124 @@ namespace QuizDesktopApp
                     button3.Enabled = false;
                     button4.Enabled = false;
                 }
-                if (textBox1.Text == "")
+                if (textBox1.Text == "who Write the National anthem of Pakistan" || textBox1.Text == "Who is the famous Poet of Pakistan")
                 {
-
+                    button1.Text = "";
+                    button4.Text = "";
+                    checkBox1.Enabled = false;
+                    button1.Enabled = false;
+                    button4.Enabled = false;
                 }
-                if (textBox1.Text == "")
+                if (textBox1.Text == "when pakistan become atomic power" || textBox1.Text == "The largest  coffee growing country in the world is ?")
                 {
-
+                    button2.Text = "";
+                    button3.Text = "";
+                    checkBox1.Enabled = false;
+                    button2.Enabled = false;
+                    button3.Enabled = false;
+                }
+                if (textBox1.Text == "who is the Governer of Sindh")
+                {
+                    button1.Text = "";
+                    button3.Text = "";
+                    checkBox1.Enabled = false;
+                    button1.Enabled = false;
+                    button3.Enabled = false;
+                }
+                if (textBox1.Text == "Who was the last Mughal empire of India")
+                {
+                    button1.Text = "";
+                    button2.Text = "";
+                    checkBox1.Enabled = false;
+                    button1.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (textBox1.Text == "When state bank of Pakistan established" || textBox1.Text == "Which is the National Game of Pakistan")
+                {
+                    button3.Text = "";
+                    button4.Text = "";
+                    checkBox1.Enabled = false;
+                    button3.Enabled = false;
+                    button4.Enabled = false;
+                }
+                if (textBox1.Text == "Who is the founder of Facebook")
+                {
+                    button1.Text = "";
+                    button2.Text = "";
+                    checkBox1.Enabled = false;
+                    button1.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (textBox1.Text == "how many nishan-e-haider holders in pakistan")
+                {
+                    button2.Text = "";
+                    button4.Text = "";
+                    checkBox1.Enabled = false;
+                    button2.Enabled = false;
+                    button4.Enabled = false;
+                }
+                if (textBox1.Text == "When Google was louched")
+                {
+                    button2.Text = "";
+                    button3.Text = "";
+                    checkBox1.Enabled = false;
+                    button2.Enabled = false;
+                    button3.Enabled = false;
+                }
+                if (textBox1.Text == "Who is the founder of Pakistan")
+                {
+                    button3.Text = "";
+                    button4.Text = "";
+                    checkBox1.Enabled = false;
+                    button3.Enabled = false;
+                    button4.Enabled = false;
+                }
+                if (textBox1.Text == "Total sixes hit by Sharid afridi")
+                {
+                    button1.Text = "";
+                    button2.Text = "";
+                    checkBox1.Enabled = false;
+                    button1.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (textBox1.Text == "When Mohammad bin Qasim Died")
+                {
+                    button1.Text = "";
+                    button2.Text = "";
+                    checkBox1.Enabled = false;
+                    button1.Enabled = false;
+                    button2.Enabled = false;
+                }
+                if (textBox1.Text == "Who was the first president of pakistan")
+                {
+                    button3.Text = "";
+                    button4.Text = "";
+                    checkBox1.Enabled = false;
+                    button3.Enabled = false;
+                    button4.Enabled = false;
+                }
+                if (textBox1.Text == "when china got independence")
+                {
+                    button1.Text = "";
+                    button4.Text = "";
+                    checkBox1.Enabled = false;
+                    button1.Enabled = false;
+                    button4.Enabled = false;
+                }
+                if (textBox1.Text == "When Mehmood Gaznavi born")
+                {
+                    button1.Text = "";
+                    button3.Text = "";
+                    checkBox1.Enabled = false;
+                    button1.Enabled = false;
+                    button3.Enabled = false;
                 }
             }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
