@@ -489,6 +489,62 @@ namespace QuizDesktopApp
                     MessageBox.Show("Mejoraty of Audience is Saying (A) is Right Answer");
                     checkBox2.Enabled = false;
                 }
+                if (textBox1.Text == "Who was the last Mughal empire of India")
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (C) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+                if (textBox1.Text == "When state bank of Pakistan established" || textBox1.Text == "Which is the National Game of Pakistan")
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (A) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+                if (textBox1.Text == "Who is the founder of Facebook")
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (C) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+                if (textBox1.Text == "how many nishan-e-haider holder in pakistan")
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (C) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+                if (textBox1.Text == "When Google was louched")
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (A) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+                if (textBox1.Text == "Who is the founder of Pakistan")
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (A) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+                if (textBox1.Text == "Total sixes hit by Shahid afridi")
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (D) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+                if (textBox1.Text == "When Mohammad bin Qasim Died")
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (A) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+                if (textBox1.Text == "Who was the first president of pakistan")
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (A) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+                if (textBox1.Text == "When china got independence")
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (B) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+                if (textBox1.Text == "When Mehmood Gaznavi born")
+                {
+                    MessageBox.Show("Mejoraty of Audience is Saying (B) is Right Answer");
+                    checkBox2.Enabled = false;
+                }
+
             }
         }
     }

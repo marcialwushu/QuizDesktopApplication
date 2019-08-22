@@ -300,7 +300,16 @@ namespace QuizDesktopApp
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private EventHandler checkBox1_CheckedChanged1;
 
-        public EventHandler checkBox1_CheckedChanged { get; private set; }
+        public EventHandler GetcheckBox1_CheckedChanged()
+        {
+            return checkBox1_CheckedChanged1;
+        }
+
+        private void SetcheckBox1_CheckedChanged(EventHandler value)
+        {
+            checkBox1_CheckedChanged1 = value;
+        }
     }
 }
