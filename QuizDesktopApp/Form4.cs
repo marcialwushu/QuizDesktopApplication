@@ -16,5 +16,22 @@ namespace QuizDesktopApp
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            label2.Text = Form2.score.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
+        }
     }
 }

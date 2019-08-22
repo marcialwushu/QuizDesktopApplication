@@ -20,13 +20,13 @@ namespace QuizDesktopApp
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            play.Stop();
+            //play.Stop();
         }
-        System.Media.SoundPlayer play = new System.Media.SoundPlayer(@"C:\Users\carlosjunior\Desktop\won.mp3");
+        //System.Media.SoundPlayer play = new System.Media.SoundPlayer(@"C:\Users\carlosjunior\Desktop\won.mp3");
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            play.Play();
+            //play.Play();
         }
     }
 }

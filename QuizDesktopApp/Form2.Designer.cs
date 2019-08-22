@@ -35,7 +35,6 @@ namespace QuizDesktopApp
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -60,7 +59,6 @@ namespace QuizDesktopApp
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,15 +89,12 @@ namespace QuizDesktopApp
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel2.Controls.Add(this.textBox1);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
             // textBox1
             // 
+            this.textBox1.AcceptsReturn = true;
+            this.textBox1.BackColor = System.Drawing.Color.PowderBlue;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -140,6 +135,7 @@ namespace QuizDesktopApp
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // panel3
             // 
@@ -243,18 +239,19 @@ namespace QuizDesktopApp
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form2
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -262,18 +259,16 @@ namespace QuizDesktopApp
             this.Load += new System.EventHandler(this.Form2_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -300,16 +295,7 @@ namespace QuizDesktopApp
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-        private EventHandler checkBox1_CheckedChanged1;
 
-        public EventHandler GetcheckBox1_CheckedChanged()
-        {
-            return checkBox1_CheckedChanged1;
-        }
-
-        private void SetcheckBox1_CheckedChanged(EventHandler value)
-        {
-            checkBox1_CheckedChanged1 = value;
-        }
+        
     }
 }
