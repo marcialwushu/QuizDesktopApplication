@@ -17,7 +17,9 @@ namespace QuizDesktopApp
             InitializeComponent();
         }
 
+#pragma warning disable IDE1006 // Estilos de Nomenclatura
         private void panel3_Paint(object sender, PaintEventArgs e)
+#pragma warning restore IDE1006 // Estilos de Nomenclatura
         {
 
         }
@@ -78,6 +80,10 @@ namespace QuizDesktopApp
                     button2.Text = "B) Sir syed Ahmad Khan";
                     button3.Text = "C) Hafiz Jalindhri";
                     button4.Text = "D) Molvi Abdul haq";
+                    /* 
+                     * Color Control.BackColor{get, set}
+                     * Obtem ou define uma cor da tela de fundo do controle 
+                     */
                     label1.BackColor = System.Drawing.Color.Indigo;
                 }
                 else if (ran2 == 2)
@@ -335,7 +341,7 @@ namespace QuizDesktopApp
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            textBox1.Text = "Who is the prime minister of Pakistan";
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

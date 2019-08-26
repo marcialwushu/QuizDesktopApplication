@@ -22,7 +22,9 @@ namespace QuizDesktopApp
 
         }
 
+#pragma warning disable IDE1006 // Estilos de Nomenclatura
         private void button1_Click(object sender, EventArgs e)
+#pragma warning restore IDE1006 // Estilos de Nomenclatura
         {
             this.Close();
         }
